@@ -27,7 +27,7 @@ const techList = [
 const Project = ({ data }) => {
   const {
     title,
-    image,
+    images,
     description,
     frontendFeatures,
     backendFeatures,
@@ -37,10 +37,10 @@ const Project = ({ data }) => {
   } = data;
 
   return (
-    <div className="flex flex-col md:flex-row gap-8 p-6 bg-[#140719] rounded-2xl shadow-xl">
+    <div className="flex flex-col md:flex-row gap-8  py-3 md:p-6 bg-[#140719] rounded-2xl shadow-xl mb-10">
       {/* Left: Image Scroll Box */}
       <div className="flex-1">
-        <ImageScrollBox image={image} />
+        <ImageScrollBox images={images} />
       </div>
 
       {/* Right: Project Details */}

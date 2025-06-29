@@ -1,34 +1,57 @@
 import React from "react";
+import StorySection from "../StorySection/StorySection";
 
 const AboutMe = () => {
   return (
-    <section className=" flex flex-col  items-center justify-center px-4 md:px-12 py-12 gap-10  text-white">
+    <>
+      <div className="w-full">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-10 text-[#B63AFF] poppins relative">
+          <span className="inline-block animate-pulse">About Me</span>
+        </h2>
+      </div>
       
-        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-[#B63AFF] pb-5 border-b poppins">About Me</h2>
-      {/* Left - text */}
-      <div className="text-center lora">
-        <p className="text-lg mb-4 leading-relaxed">
-          I’m <span className="font-semibold">Taj Uddin</span>, a passionate <span className="font-semibold">Full Stack Web Developer</span>. 
-          I enjoy building modern, responsive, and efficient web applications using technologies like React, Node.js, and MongoDB.
-        </p>
+      
+      
+    <section className="flex flex-col md:flex-row items-center justify-between px-4 md:px-12 py-12 gap-10 text-white">
+    
 
-        <p className="text-lg mb-4 leading-relaxed">
-          My programming journey started in my college days when I tried to customize a simple HTML page for a college project and learned basic C language— 
-          and I was instantly hooked! Over time, I dived deeper into JavaScript, exploring both frontend and backend 
-          development, and building everything from small apps to full-fledged systems.
-        </p>
-
-        <p className="text-lg mb-4 leading-relaxed">
-          Apart from coding, I love <span className="font-semibold">playing badminton</span> and going on <span className="font-semibold">tours</span> 
-          to discover new places. These hobbies help me stay active and inspired, bringing fresh perspectives to my work.
+      {/* Left: Text */}
+      <div className="md:w-1/2 space-y-4 text-left lora">
+        <p className="text-lg leading-relaxed">
+          I’m <span className="font-semibold">Taj Uddin</span>, a passionate{" "}
+          <span className="font-semibold">Full Stack Web Developer</span>. I
+          enjoy building modern, responsive, and efficient web applications
+          using technologies like React, Node.js, and MongoDB.
         </p>
 
         <p className="text-lg leading-relaxed">
-          I’m always excited to learn new technologies and take on challenging projects that push my skills to the next level!
+          My programming journey started in my college days when I tried to
+          customize a simple HTML page for a college project and learned basic C
+          language — and I was instantly hooked! Over time, I dived deeper into
+          JavaScript, exploring both frontend and backend development, and
+          building everything from small apps to full-fledged systems.
+        </p>
+
+        <p className="text-lg leading-relaxed">
+          Apart from coding, I love{" "}
+          <span className="font-semibold">playing badminton</span> and going on{" "}
+          <span className="font-semibold">tours</span> to discover new places.
+          These hobbies help me stay active and inspired, bringing fresh
+          perspectives to my work.
+        </p>
+
+        <p className="text-lg leading-relaxed">
+          I’m always excited to learn new technologies and take on challenging
+          projects that push my skills to the next level!
         </p>
       </div>
 
+      {/* Right: Masonry images */}
+      <div className="md:w-1/2 w-full">
+        <StorySection />
+      </div>
     </section>
+      </>
   );
 };
 

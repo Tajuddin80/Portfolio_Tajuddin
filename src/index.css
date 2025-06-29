@@ -24,30 +24,24 @@
   animation: fade-in 0.6s ease forwards;
 }
 
-
 .custom-scrollbar::-webkit-scrollbar {
-  width: 12px;
+  width: 8px;
 }
-
 .custom-scrollbar::-webkit-scrollbar-track {
-  background: #140719;
-  border-radius: 10px;
+  background: #1e0f2b;
 }
-
 .custom-scrollbar::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #B63AFF, #7A23CC);
-  border-radius: 10px;
-  border: 2px solid #140719;
+  background: #b63aff;
+  border-radius: 4px;
 }
-
-.custom-scrollbar {
-  scrollbar-color: #B63AFF #140719;
-  scrollbar-width: thin;
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #a12be0;
 }
 
 /* Custom slow bounce animation */
 @keyframes bounce-slow {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -57,4 +51,37 @@
 
 .animate-bounce-slow {
   animation: bounce-slow 1.5s infinite;
+}
+
+@layer utilities {
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  .animate-slide {
+    animation: slide 20s linear infinite;
+  }
+}
+
+@keyframes floatPulse {
+  0% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 10px 30px 5px rgba(182, 58, 255, 0.5);
+  }
+  50% {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 15px 40px 10px rgba(182, 58, 255, 0.7);
+  }
+  100% {
+    transform: translateY(0) scale(1);
+    box-shadow: 0 10px 30px 5px rgba(182, 58, 255, 0.5);
+  }
+}
+
+.animate-floatPulse {
+  animation: floatPulse 3s ease-in-out infinite;
 }

@@ -20,16 +20,16 @@ const Hero = () => {
         {/* Social links */}
         <div className="flex justify-center md:justify-start gap-4 mb-4">
           <a
-            href="https://linkedin.com"
+            href="www.linkedin.com/in/tajuddin80"
             target="_blank"
             rel="noopener noreferrer"
           >
             <Linkedin className="w-10 h-10 text-[#B63AFF] hover:text-white hover:bg-[#B63AFF] rounded p-1 transition" />
           </a>
-          <a href="mailto:youremail@example.com">
+          <a href="mailto:tajuddin.cse.dev@gmail.com">
             <Mail className="w-10 h-10 text-[#B63AFF] hover:text-white hover:bg-[#B63AFF] rounded p-1 transition" />
           </a>
-          <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/TajuddinCSE" target="_blank" rel="noopener noreferrer">
             <Twitter className="w-10 h-10 text-[#B63AFF] hover:text-white hover:bg-[#B63AFF] rounded p-1 transition" />
           </a>
         </div>

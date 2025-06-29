@@ -2,7 +2,10 @@
   {
     "id": 1,
     "title": "MealBridge → Connecting Food Donors with People in Need",
-    "image": "https://github.com/Tajuddin80/Meal-Bridge-client/blob/main/meal-bridge-project.web.app_.png?raw=true",
+    "images": [
+      "https://github.com/Tajuddin80/Meal-Bridge-client/blob/main/meal-bridge-project.web.app_.png?raw=true"
+  
+    ],
     "description": "MealBridge is a web platform that connects food donors with people in need, helping reduce food waste by enabling donors to share surplus food and receivers to request and receive available items easily. It fosters a caring community by redistributing excess food efficiently and securely, offering a smooth, user-friendly experience powered by modern web technologies.",
     "frontendFeaturesTitle": "Frontend (Client)",
     "frontendFeatures": [
@@ -44,7 +47,7 @@
   {
     "id": 2,
     "title": "PlantBook → A Gardening Community & Resource Hub",
-    "image": "https://i.ibb.co/zK88gXj/plant-Book.png",
+    "images": ["https://i.ibb.co/zK88gXj/plant-Book.png"],
     "description": "PlantBook is a vibrant platform designed for gardening enthusiasts to share tips, find local gardeners, ask plant care questions, participate in gardening events, and connect with others passionate about plants — from composting to hydroponics and balcony gardening.",
     "frontendFeaturesTitle": "Frontend (Client)",
     "frontendFeatures": [
@@ -81,37 +84,38 @@
     ]
   },
   {
-  "id": 3,
-  "title": "Bill's Buddy → Your Smart Bill Payment Companion",
-  "image": "https://github.com/Tajuddin80/Bill-s-Buddy/blob/main/bill-s-buddy.web.app_home_Pay-Airtime.png?raw=true",
-  "description": "Bill's Buddy is a React-based bill management platform that helps users track, calculate, and manage their bills effortlessly. Using localStorage, the app tracks which bills are paid or unpaid and updates dynamically. It offers a smooth and intuitive experience powered by React Router and modern UI tools.",
-  "frontendFeaturesTitle": "Frontend (Client)",
-  "frontendFeatures": [
-    "React 19.x, Vite, Tailwind CSS, DaisyUI based UI",
-    "Mark bills as Paid/Unpaid with status saved in localStorage",
-    "Real-time calculations and summaries of bill data",
-    "Clean, responsive UI with Tailwind CSS + DaisyUI",
-    "Navigation powered by React Router v7",
-    "Interactive number animations with React CountUp",
-    "Informative alerts with React Toastify",
-    "SEO-friendly meta tags using React Helmet Async",
-    "Carousels and sliders with Swiper, typewriter effects"
-  ],
-  "backendFeaturesTitle": "Backend (Optional/Future)",
-  "backendFeatures": [
-    "Optional Firebase setup for data persistence",
-    "Scalable structure ready for backend integration"
-  ],
-  "links": [
-    {
-      "label": "Live Link",
-      "url": "https://bill-s-buddy.web.app/"
-    },
-    {
-      "label": "GitHub Repo",
-      "url": "https://github.com/Tajuddin80/bill-s-buddy"
-    }
-  ]
-}
-
+    "id": 3,
+    "title": "Bill's Buddy → Your Smart Bill Payment Companion",
+    "images": [
+      "https://i.ibb.co/qVVdjCV/localhost-5174.png"
+    ],
+    "description": "Bill's Buddy is a React-based bill management platform that helps users track, calculate, and manage their bills effortlessly. Using localStorage, the app tracks which bills are paid or unpaid and updates dynamically. It offers a smooth and intuitive experience powered by React Router and modern UI tools.",
+    "frontendFeaturesTitle": "Frontend (Client)",
+    "frontendFeatures": [
+      "React 19.x, Vite, Tailwind CSS, DaisyUI based UI",
+      "Mark bills as Paid/Unpaid with status saved in localStorage",
+      "Real-time calculations and summaries of bill data",
+      "Clean, responsive UI with Tailwind CSS + DaisyUI",
+      "Navigation powered by React Router v7",
+      "Interactive number animations with React CountUp",
+      "Informative alerts with React Toastify",
+      "SEO-friendly meta tags using React Helmet Async",
+      "Carousels and sliders with Swiper, typewriter effects"
+    ],
+    "backendFeaturesTitle": "Backend (Optional/Future)",
+    "backendFeatures": [
+      "Optional Firebase setup for data persistence",
+      "Scalable structure ready for backend integration"
+    ],
+    "links": [
+      {
+        "label": "Live Link",
+        "url": "https://bill-s-buddy.web.app/"
+      },
+      {
+        "label": "GitHub Repo",
+        "url": "https://github.com/Tajuddin80/bill-s-buddy"
+      }
+    ]
+  }
 ]
