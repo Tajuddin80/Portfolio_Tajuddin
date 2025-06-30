@@ -72,7 +72,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1">{links}</ul>
       </div>
       <div className="navbar-end">
-        <Magnet padding={300} disabled={false} magnetStrength={20}>
+        <Magnet padding={100} disabled={false} magnetStrength={20}>
         <button className="btn border bg-[#B63AFF] border-[#507687] text-white hover:text-[#B63AFF] hover:border-white hover:bg-transparent transition-colors duration-200">
          Watch my Resume
         </button>

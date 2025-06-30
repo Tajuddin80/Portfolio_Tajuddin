@@ -4,18 +4,24 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio TajUddin</title>
+    <title>Portfolio || TajUddin</title>
   </head>
   <!-- bg-gradient-to-br from-[#511D43] to-[#0F172A] -->
   <!-- bg-gradient-to-br from-[#1E293B] to-[#901E3E] -->
-  <body
-  class="min-h-screen 
-   bg-[#140719]
-  
-
- text-white"
-  >
+  <body class="min-h-screen bg-[#140719] text-white">
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "gKXUJFWkER1v6oBTo",
+        });
+      })();
+    </script>
   </body>
 </html>

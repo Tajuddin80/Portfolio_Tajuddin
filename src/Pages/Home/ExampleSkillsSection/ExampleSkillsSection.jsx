@@ -80,7 +80,7 @@ const createRow = (skillsArray, dir = "left") => (
 );
 
 const ExampleSkillsSection = () => (
-  <div className="w-full min-h-screen bg-[#140719] flex flex-col justify-center px-4 sm:px-8 md:px-16 py-10 space-y-10">
+  <div data-aos="fade-right" className="w-full min-h-screen bg-[#140719] flex flex-col justify-center px-4 sm:px-8 md:px-16 py-10 space-y-10">
     {/* Main Title */}
     <h2 className="text-4xl md:text-5xl font-bold text-center text-[#B63AFF] poppins relative">
       <span className="inline-block animate-pulse">My Skills & Technologies</span>
