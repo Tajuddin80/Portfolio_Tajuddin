@@ -19,6 +19,9 @@
     transform: scale(1);
   }
 }
+.active-link {
+  @apply bg-[#B63AFF] text-white;
+}
 
 .animate-fade-in {
   animation: fade-in 0.6s ease forwards;

@@ -1,7 +1,14 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2";
-import { Linkedin, Github, Mail, Twitter, Phone, MessageSquare } from "lucide-react";
+import {
+  Linkedin,
+  Github,
+  Mail,
+  Twitter,
+  Phone,
+  MessageSquare,
+} from "lucide-react";
 
 const ContactMe = () => {
   const form = useRef();
@@ -42,9 +49,11 @@ const ContactMe = () => {
   };
 
   return (
-    <section className="w-full min-h-screen flex items-center justify-center bg-transparent px-4 py-16">
-      <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8 backdrop-blur-md bg-[#140719]/50 rounded-2xl shadow-2xl p-8 border-2 border-[#B63AFF]/50">
-        
+    <section
+      data-aos="fade-up"
+      className="w-full min-h-screen flex items-center justify-center bg-transparent px-4 py-16"
+    >
+      <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8 backdrop-blur-md bg-[#140719]/50 rounded-2xl shadow-2xl p-8 border-2 transition-transform duration-500 hover:scale-105 border-[#B63AFF]/50">
         {/* Left Side */}
         <div className="flex flex-col justify-between text-center md:text-left">
           <div>
@@ -52,57 +61,55 @@ const ContactMe = () => {
               Contact <span className="text-white">Me</span>
             </h2>
             <p className="text-white text-lg mb-4">
-              Let’s build something <span className="text-[#B63AFF] font-semibold">amazing</span> together.
+              Let’s build something{" "}
+              <span className="text-[#B63AFF] font-semibold">amazing</span>{" "}
+              together.
             </p>
-            <p className="text-white opacity-70 mb-6">
-              Dhaka, Bangladesh
-            </p>
-      <div className="text-white space-y-2 mb-6">
-  <div className="flex items-center gap-2">
-    <Phone className="text-[#B63AFF]" />
-    <a
-      href="tel:+8801845072525"
-      className="hover:text-[#B63AFF] transition"
-    >
-      +8801845072525
-    </a>
-  </div>
+            <p className="text-white opacity-70 mb-6">Dhaka, Bangladesh</p>
+            <div className="text-white space-y-2 mb-6">
+              <div className="flex items-center gap-2">
+                <Phone className="text-[#B63AFF]" />
+                <a
+                  href="tel:+8801845072525"
+                  className="hover:text-[#B63AFF] transition"
+                >
+                  +8801845072525
+                </a>
+              </div>
 
+              <div className="flex items-center gap-2">
+                <Phone className="text-[#B63AFF]" />
+                <a
+                  href="tel:+8801303187780"
+                  className="hover:text-[#B63AFF] transition"
+                >
+                  +8801303187780
+                </a>
+              </div>
 
-  <div className="flex items-center gap-2">
-    <Phone className="text-[#B63AFF]" />
-    <a
-      href="tel:+8801303187780"
-      className="hover:text-[#B63AFF] transition"
-    >
-      +8801303187780
-    </a>
-  </div>
-
-    <div className="flex items-center gap-2">
-    <MessageSquare className="text-[#B63AFF]" />
-    <a
-      href="https://wa.me/8801845072525"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:text-[#B63AFF] transition"
-    >
-      WhatsApp: +8801845072525
-    </a>
-  </div>
-  <div className="flex items-center gap-2">
-    <MessageSquare className="text-[#B63AFF]" />
-    <a
-      href="https://wa.me/8801303187780"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="hover:text-[#B63AFF] transition"
-    >
-      WhatsApp: +8801303187780
-    </a>
-  </div>
-</div>
-
+              <div className="flex items-center gap-2">
+                <MessageSquare className="text-[#B63AFF]" />
+                <a
+                  href="https://wa.me/8801845072525"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#B63AFF] transition"
+                >
+                  WhatsApp: +8801845072525
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
+                <MessageSquare className="text-[#B63AFF]" />
+                <a
+                  href="https://wa.me/8801303187780"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-[#B63AFF] transition"
+                >
+                  WhatsApp: +8801303187780
+                </a>
+              </div>
+            </div>
           </div>
 
           <div className="flex justify-center md:justify-start gap-4 rounded-xl border border-[#B63AFF]/60 p-4">
@@ -120,9 +127,14 @@ const ContactMe = () => {
             >
               <Github className="w-10 h-10 text-[#B63AFF] hover:text-white hover:bg-[#B63AFF] rounded p-1 transition" />
             </a>
-            <a href="mailto:tajuddin.cse.dev@gmail.com">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=tajuddin.cse.dev@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <Mail className="w-10 h-10 text-[#B63AFF] hover:text-white hover:bg-[#B63AFF] rounded p-1 transition" />
             </a>
+
             <a
               href="https://x.com/TajuddinCSE"
               target="_blank"
@@ -174,7 +186,6 @@ const ContactMe = () => {
             </button>
           </div>
         </form>
-
       </div>
     </section>
   );

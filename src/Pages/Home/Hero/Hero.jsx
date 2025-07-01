@@ -1,13 +1,14 @@
 import React from "react";
+import { IoCloudDownloadOutline } from "react-icons/io5";
 import heroPic from "../../../assets/img2.png";
 import { Linkedin, Mail, Twitter, Github } from "lucide-react";
 import Magnet from "../../../components/Magnet/Magnet";
 
 const Hero = () => {
   return (
-    <section data-aos="fade-right" className="flex flex-col-reverse  md:flex-col-reverse lg:flex-row items-center justify-around min-h-[80vh] px-4 md:px-12 py-8 gap-6 md:gap-10 lg:gap-16">
+    <section data-aos="fade-up" className="flex flex-col-reverse  md:flex-col-reverse lg:flex-row items-center justify-around min-h-[70vh] px-4 md:px-12 py-8 gap-6 md:gap-10 lg:gap-16">
       {/* Text Section */}
-      <div className="max-w-lg text-center lg:text-left mt-4 lg:mt-0">
+      <div className=" text-center lg:text-left mt-4 lg:mt-0">
         <h3 className="text-2xl md:text-3xl poppins">Hi, I am</h3>
         <h1 className="text-4xl md:text-5xl font-bold poppins">Taj Uddin</h1>
         <h3 className="text-2xl md:text-3xl poppins">Full Stack Developer</h3>
@@ -39,9 +40,14 @@ const Hero = () => {
           >
             <Github className="w-10 h-10 text-[#B63AFF] hover:text-white hover:bg-[#B63AFF] rounded p-1 transition" />
           </a>
-          <a href="mailto:tajuddin.cse.dev@gmail.com">
-            <Mail className="w-10 h-10 text-[#B63AFF] hover:text-white hover:bg-[#B63AFF] rounded p-1 transition" />
-          </a>
+        <a
+  href="https://mail.google.com/mail/?view=cm&fs=1&to=tajuddin.cse.dev@gmail.com"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Mail className="w-10 h-10 text-[#B63AFF] hover:text-white hover:bg-[#B63AFF] rounded p-1 transition" />
+</a>
+
           <a
             href="https://x.com/TajuddinCSE"
             target="_blank"
@@ -51,15 +57,15 @@ const Hero = () => {
           </a>
         </div>
 
-        <Magnet padding={400} disabled={false} magnetStrength={20}>
+        <Magnet padding={200} disabled={false} magnetStrength={20}>
           <button className="btn text-white bg-[#B63AFF] hover:bg-transparent border border-[#B63AFF] transition">
-            Watch my Resume
+         Resume <IoCloudDownloadOutline />
           </button>
         </Magnet>
       </div>
 
       {/* Image Section */}
-      <div className="flex justify-center items-center w-full lg:w-1/2">
+      <div className="flex justify-center lg:justify-end items-center w-full">
         <img
           src={heroPic}
           alt="Taj Uddin"

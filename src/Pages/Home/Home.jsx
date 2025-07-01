@@ -2,17 +2,33 @@ import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { ArrowUp } from "lucide-react";
+import { Element } from "react-scroll";
 
 import Hero from "./Hero/Hero";
 import AboutMe from "./AboutMe/AboutMe";
 import ExampleSkillsSection from "./ExampleSkillsSection/ExampleSkillsSection";
 import ProjectSection from "./ProjectSection/ProjectSection";
-import StorySection from "./StorySection/StorySection";
 import EducationalQualification from "./EducationalQualification/EducationalQualification";
 import BootCamps from "./BootCamps/BootCamps";
 import ContactMe from "./ContactMe/ContactMe";
+import { useLocation, useNavigate } from "react-router";
 
 const Home = () => {
+  const location = useLocation();
+
+const navigate = useNavigate();
+useEffect(() => {
+  if (location.state?.scrollToProjects) {
+    const el = document.getElementById("projects");
+    if (el) {
+      setTimeout(() => {
+        el.scrollIntoView({ behavior: "smooth" });
+        // 🔑 Clear scroll state so it won't persist on reload
+        navigate("/", { replace: true });
+      }, 100);
+    }
+  }
+}, [location, navigate]);
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
@@ -22,11 +38,7 @@ const Home = () => {
     });
 
     const handleScroll = () => {
-      if (window.scrollY > 300) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
+      setShowButton(window.scrollY > 300);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -36,21 +48,37 @@ const Home = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
 
   return (
     <>
-      <Hero />
-      <AboutMe />
-      <ExampleSkillsSection />
-      <EducationalQualification />
-      <BootCamps />
-      <ProjectSection />
-      <ContactMe />
+      <Element name="home">
+        <Hero />
+      </Element>
 
-      {/* Up Arrow Button with bounce + shadow */}
+      <Element name="aboutMe">
+        <AboutMe />
+      </Element>
+
+      <Element name="mySkill">
+        <ExampleSkillsSection />
+      </Element>
+
+      <Element name="qualifications">
+        <EducationalQualification />
+        <BootCamps />
+      </Element>
+
+      <Element name="projects">
+        <ProjectSection />
+      </Element>
+
+      <Element name="contact">
+        <ContactMe />
+      </Element>
+
       {showButton && (
         <button
           onClick={scrollToTop}

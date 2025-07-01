@@ -2,7 +2,7 @@ import React from "react";
 
 const EducationalQualification = () => {
   return (
-    <section className="w-full bg-[#140719] text-white px-4 md:px-8 lg:px-16 py-10">
+    <section data-aos="fade-up" className="w-full bg-[#140719] text-white px-4 md:px-8 lg:px-16 py-10">
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-8 text-[#B63AFF] poppins relative">
         <span className="inline-block animate-pulse">Educational Qualification</span>
       </h2>

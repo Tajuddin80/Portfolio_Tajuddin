@@ -4,7 +4,7 @@ import StorySection from "../StorySection/StorySection";
 const AboutMe = () => {
   return (
     <>
-      <div data-aos="fade-left" className="w-full">
+      <div data-aos="fade-up" className="w-full ">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-10 text-[#B63AFF] poppins relative">
           <span className="inline-block animate-pulse">About Me</span>
         </h2>

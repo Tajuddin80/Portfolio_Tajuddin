@@ -1,31 +1,50 @@
-import React from "react";
-import {
-  SiFirebase,
-  SiMongodb,
-  SiTailwindcss,
-  SiReact,
-  SiExpress,
-  SiNodedotjs,
-  SiHtml5,
-  SiCss3,
-  SiJavascript,
-} from "react-icons/si";
 import ImageScrollBox from "../../../components/ImageScrollBox/ImageScrollBox";
+import {
+  SiCss3,
+  SiDaisyui,
+  SiExpress,
+  SiFirebase,
+  SiHtml5,
+  SiJavascript,
+  SiJsonwebtokens,
+  SiMongodb,
+  SiNodedotjs,
+  SiReact,
+  SiReactrouter,
+  SiTailwindcss,
+  SiVite,
+  SiAxios,
+  SiFramer,
+  // SiDotenv — no such icon in react-icons
+} from "react-icons/si";
+import { RiAlertLine } from "react-icons/ri"; // SweetAlert2 (alert icon)
+import { BiTransfer } from "react-icons/bi"; // CORS (symbolic)
+import { FaCode } from "react-icons/fa"; // generic for Lottie, Swiper, Dotenv
+import { Link } from "react-router";
 
-const techList = [
-  { name: "Firebase", icon: <SiFirebase /> },
-  { name: "MongoDB", icon: <SiMongodb /> },
-  { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+const techListNameAndIcon = [
   { name: "React", icon: <SiReact /> },
-  { name: "Express.js", icon: <SiExpress /> },
-  { name: "Node.js", icon: <SiNodedotjs /> },
   { name: "HTML", icon: <SiHtml5 /> },
-  { name: "CSS", icon: <SiCss3 /> },
-  { name: "JavaScript", icon: <SiJavascript /> },
+  { name: "React Router", icon: <SiReactrouter /> },
+  { name: "Vite", icon: <SiVite /> },
+  { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+  { name: "DaisyUI", icon: <SiDaisyui /> },
+  { name: "Firebase", icon: <SiFirebase /> },
+  { name: "Node.js", icon: <SiNodedotjs /> },
+  { name: "Express.js", icon: <SiExpress /> },
+  { name: "MongoDB", icon: <SiMongodb /> },
+  { name: "Axios", icon: <SiAxios /> },
+  { name: "Framer Motion", icon: <SiFramer /> },
+  { name: "Lottie", icon: <FaCode /> }, // placeholder generic icon
+  { name: "Swiper", icon: <FaCode /> }, // placeholder generic icon
+  { name: "SweetAlert2", icon: <RiAlertLine /> },
+  { name: "Dotenv", icon: <FaCode /> }, // placeholder generic icon
+  { name: "CORS", icon: <BiTransfer /> },
 ];
 
 const Project = ({ data }) => {
   const {
+    id,
     title,
     images,
     description,
@@ -34,6 +53,7 @@ const Project = ({ data }) => {
     links,
     frontendFeaturesTitle,
     backendFeaturesTitle,
+    techList,
   } = data;
 
   return (
@@ -74,15 +94,20 @@ const Project = ({ data }) => {
         </div>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 pt-2">
-          {techList.map((tech) => (
-            <div
-              key={tech.name}
-              className="flex items-center gap-1 bg-[#B63AFF] text-white px-3 py-1 rounded-full text-xs font-semibold transform transition duration-300 hover:scale-105 hover:bg-[#a12be0] hover:text-[#140719]"
-            >
-              {tech.icon}
-              {tech.name}
-            </div>
-          ))}
+          {techList.map((tech) => {
+            const match = techListNameAndIcon.find(
+              (item) => item.name === tech
+            );
+            return match ? (
+              <div
+                key={match.name}
+                className="flex items-center gap-1 bg-[#B63AFF] text-white px-3 py-1 rounded-full text-xs font-semibold transform transition duration-300 hover:scale-105 hover:bg-[#a12be0] hover:text-[#140719]"
+              >
+                {match.icon}
+                {match.name}
+              </div>
+            ) : null;
+          })}
         </div>
 
         <div className="flex flex-wrap gap-4 pt-4">
@@ -97,6 +122,14 @@ const Project = ({ data }) => {
               {link.label}
             </a>
           ))}
+        </div>
+        <div className="flex flex-wrap gap-4 pt-4">
+          <Link
+            to={`/projectDetails/${id}`}
+            className="px-4 py-2 bg-[#B63AFF] text-white font-bold rounded-lg transition transform duration-300 hover:scale-105 hover:bg-[#a12be0] hover:text-[#140719]"
+          >
+       More Details
+          </Link>
         </div>
       </div>
     </div>

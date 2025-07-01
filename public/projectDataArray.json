@@ -4,9 +4,8 @@
     "title": "MealBridge → Connecting Food Donors with People in Need",
     "images": [
       "https://github.com/Tajuddin80/Meal-Bridge-client/blob/main/meal-bridge-project.web.app_.png?raw=true"
-  
     ],
-    "description": "MealBridge is a web platform that connects food donors with people in need, helping reduce food waste by enabling donors to share surplus food and receivers to request and receive available items easily. It fosters a caring community by redistributing excess food efficiently and securely, offering a smooth, user-friendly experience powered by modern web technologies.",
+    "description": "MealBridge is a social-impact web platform designed to combat food waste and hunger by connecting food donors with people in need. It enables donors to post surplus food and receivers to claim it in real-time, fostering a community of care and sustainability. The app ensures a seamless, secure experience powered by modern technologies and a thoughtful user-centric design.",
     "frontendFeaturesTitle": "Frontend (Client)",
     "frontendFeatures": [
       "React, Vite, Tailwind CSS, DaisyUI based UI",
@@ -29,6 +28,11 @@
       "Environment configuration via dotenv",
       "Nodemon for hot reload in development"
     ],
+    "techList": [
+      "HTML", "React", "React Router", "Vite", "Tailwind CSS", "Firebase", "JWT",
+      "Node.js", "Express.js", "MongoDB", "Axios", "React Query", "Framer Motion",
+      "Swiper", "Dotenv", "CORS"
+    ],
     "links": [
       {
         "label": "Live Link",
@@ -42,13 +46,32 @@
         "label": "GitHub Server Repo",
         "url": "https://github.com/Tajuddin80/Meal-Bridge-server"
       }
-    ]
+    ],
+    "moreDetails": {
+      "challengesFaced": [
+        "Designing a role-based flow that felt natural to both donors and receivers without confusion.",
+        "Preventing race conditions where multiple receivers could claim the same food item simultaneously.",
+        "Handling secure authentication while balancing a fast, smooth UX."
+      ],
+      "solutions": [
+        "Created clear, separate dashboards for donors and receivers with conditionally rendered components and routes.",
+        "Implemented atomic database updates and conditional queries in MongoDB to lock food items once claimed.",
+        "Used Firebase JWT tokens with backend verification for robust yet seamless role-based authentication."
+      ],
+      "futureImprovements": [
+        "Integrate geolocation and mapping to match donors with nearby receivers.",
+        "Add multilingual support to broaden accessibility.",
+        "Introduce push notifications (via Firebase Cloud Messaging) for real-time alerts.",
+        "Build a rating and feedback system to strengthen community trust.",
+        "Enable food safety tips and automated expiry reminders."
+      ]
+    }
   },
   {
     "id": 2,
     "title": "PlantBook → A Gardening Community & Resource Hub",
     "images": ["https://i.ibb.co/zK88gXj/plant-Book.png"],
-    "description": "PlantBook is a vibrant platform designed for gardening enthusiasts to share tips, find local gardeners, ask plant care questions, participate in gardening events, and connect with others passionate about plants — from composting to hydroponics and balcony gardening.",
+    "description": "PlantBook is a dynamic platform for gardening lovers to connect, learn, and grow together. It offers a space to share tips, ask questions, hire local gardeners, and join events. Designed with community and accessibility in mind, it combines modern UI elements with solid backend APIs to deliver a rich, interactive experience.",
     "frontendFeaturesTitle": "Frontend (Client)",
     "frontendFeatures": [
       "Firebase authentication (email/password, Google)",
@@ -68,6 +91,10 @@
       "Environment configuration via .env",
       "Nodemon for hot reload in development"
     ],
+    "techList": [
+      "React", "HTML", "React Router", "Vite", "Tailwind CSS", "Firebase",
+      "Node.js", "Express.js", "MongoDB", "Axios", "Framer Motion",  "Swiper", "Dotenv", "CORS"
+    ],
     "links": [
       {
         "label": "Live Link",
@@ -76,20 +103,32 @@
       {
         "label": "GitHub Repo",
         "url": "https://github.com/Tajuddin80/Plant-Book"
-      },
-      {
-        "label": "More Details",
-        "url": "https://your-details-link.com"
       }
-    ]
+    ],
+    "moreDetails": {
+      "challengesFaced": [
+        "Balancing rich UI interactions with performance on lower-end devices.",
+        "Designing a flexible event system to support both virtual and physical events.",
+        "Encouraging community engagement while preventing spammy or inappropriate content."
+      ],
+      "solutions": [
+        "Lazy-loaded heavy components and optimized animations using Framer Motion’s variants.",
+        "Created an event schema with optional fields for location or meeting links, allowing hybrid event support.",
+        "Implemented moderation tools and basic content validation with future plans for AI-based filtering."
+      ],
+      "futureImprovements": [
+        "Add plant disease diagnosis using AI image recognition.",
+        "Introduce in-app messaging and forums for deeper community building.",
+        "Gamify contributions with badges and leaderboards.",
+        "Offer integration with e-commerce APIs for plant and tool purchases."
+      ]
+    }
   },
   {
     "id": 3,
     "title": "Bill's Buddy → Your Smart Bill Payment Companion",
-    "images": [
-      "https://i.ibb.co/qVVdjCV/localhost-5174.png"
-    ],
-    "description": "Bill's Buddy is a React-based bill management platform that helps users track, calculate, and manage their bills effortlessly. Using localStorage, the app tracks which bills are paid or unpaid and updates dynamically. It offers a smooth and intuitive experience powered by React Router and modern UI tools.",
+    "images": ["https://i.ibb.co/qVVdjCV/localhost-5174.png"],
+    "description": "Bill's Buddy is an intuitive app that helps users manage, calculate, and track bill payments in one place. Designed for simplicity, it ensures that users can stay on top of their bills without hassle. It leverages localStorage for persistence and is structured for easy future backend integration.",
     "frontendFeaturesTitle": "Frontend (Client)",
     "frontendFeatures": [
       "React 19.x, Vite, Tailwind CSS, DaisyUI based UI",
@@ -107,6 +146,10 @@
       "Optional Firebase setup for data persistence",
       "Scalable structure ready for backend integration"
     ],
+    "techList": [
+      "React", "React Router", "HTML", "Vite", "Tailwind CSS", "Firebase",
+     "Swiper",  "Dotenv"
+    ],
     "links": [
       {
         "label": "Live Link",
@@ -116,6 +159,24 @@
         "label": "GitHub Repo",
         "url": "https://github.com/Tajuddin80/bill-s-buddy"
       }
-    ]
+    ],
+    "moreDetails": {
+      "challengesFaced": [
+        "Maintaining accurate, real-time summaries with client-side-only logic.",
+        "Persisting data securely without a backend.",
+        "Ensuring data consistency across refreshes and multiple tabs."
+      ],
+      "solutions": [
+        "Used structured React state combined with derived values for clean calculations.",
+        "Leveraged localStorage effectively with useEffect watchers for sync.",
+        "Prepared scalable architecture to add backend integration seamlessly."
+      ],
+      "futureImprovements": [
+        "Add Firebase/Express backend for multi-device sync and user accounts.",
+        "Integrate third-party payment gateways for bill settlement.",
+        "Include recurring bill reminders via push/email notifications.",
+        "Add charts and visual summaries for better insights."
+      ]
+    }
   }
 ]

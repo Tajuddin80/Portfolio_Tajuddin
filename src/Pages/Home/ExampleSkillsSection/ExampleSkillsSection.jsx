@@ -14,22 +14,28 @@ import {
   SiPostman,
   SiGit,
   SiPython,
+  SiBootstrap
 } from "react-icons/si";
 import {
   FaJava,
   FaCode,
   FaProjectDiagram,
   FaDatabase,
-  FaBrain,
+  FaBrain
 } from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
+import { RiReactjsLine } from "react-icons/ri";
 
-// Skill groups
+// --- Skill groups ---
 const frontendSkills = [
   { icon: <SiHtml5 />, label: "HTML5" },
   { icon: <SiCss3 />, label: "CSS3" },
   { icon: <SiJavascript />, label: "JavaScript" },
   { icon: <SiReact />, label: "React" },
   { icon: <SiTailwindcss />, label: "Tailwind CSS" },
+  { icon: <SiBootstrap />, label: "Bootstrap" },
+  { icon: <TbBrandNextjs />, label: "Next.js" },
+  { icon: <RiReactjsLine />, label: "React Router" }
 ];
 
 const backendSkills = [
@@ -37,7 +43,7 @@ const backendSkills = [
   { icon: <SiExpress />, label: "Express" },
   { icon: <SiMongodb />, label: "MongoDB" },
   { icon: <SiFirebase />, label: "Firebase" },
-  { icon: <SiPostman />, label: "Postman" },
+  { icon: <SiPostman />, label: "Postman" }
 ];
 
 const otherSkills = [
@@ -48,10 +54,10 @@ const otherSkills = [
   { icon: <FaCode />, label: "C" },
   { icon: <FaBrain />, label: "Algorithm" },
   { icon: <FaProjectDiagram />, label: "OOP" },
-  { icon: <FaDatabase />, label: "Data Structure" },
+  { icon: <FaDatabase />, label: "Data Structure" }
 ];
 
-// Reusable marquee row
+// --- Reusable marquee row ---
 const createRow = (skillsArray, dir = "left") => (
   <Marquee
     gradient={false}
@@ -66,7 +72,7 @@ const createRow = (skillsArray, dir = "left") => (
       .map((skill, idx) => (
         <div
           key={`${dir}-${idx}-${skill.label}`}
-          className="flex flex-col items-center justify-center w-36 h-36 sm:w-40 sm:h-40 md:w-48 md:h-48 
+          className="flex flex-col items-center justify-center w-25 h-25 sm:w-30 sm:h-30 md:w-40 md:h-40 
                      bg-transparent border border-[#B63AFF] rounded-xl text-white mx-4 shadow-lg 
                      transition hover:bg-[#B63AFF] hover:text-[#140719] animate-pulse"
         >
@@ -79,36 +85,24 @@ const createRow = (skillsArray, dir = "left") => (
   </Marquee>
 );
 
+// --- Main component ---
 const ExampleSkillsSection = () => (
-  <div data-aos="fade-right" className="w-full min-h-screen bg-[#140719] flex flex-col justify-center px-4 sm:px-8 md:px-16 py-10 space-y-10">
-    {/* Main Title */}
+  <div
+   data-aos="fade-up"
+    className="w-full min-h-screen bg-[#140719] flex flex-col justify-center px-4 sm:px-8 md:px-16 py-10 space-y-1"
+  >
     <h2 className="text-4xl md:text-5xl font-bold text-center text-[#B63AFF] poppins relative">
       <span className="inline-block animate-pulse">My Skills & Technologies</span>
     </h2>
 
     {/* Frontend */}
-    <div>
-      <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-center text-[#B63AFF] mb-3 relative">
-        <span className="inline-block animate-bounce">Frontend</span>
-      </h3>
-      {createRow(frontendSkills, "left")}
-    </div>
+    {createRow(frontendSkills, "left")}
 
     {/* Backend */}
-    <div>
-      <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-center text-[#B63AFF] mb-3 relative">
-        <span className="inline-block animate-bounce">Backend</span>
-      </h3>
-      {createRow(backendSkills, "right")}
-    </div>
+    {createRow(backendSkills, "right")}
 
     {/* Others */}
-    <div>
-      <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold text-center text-[#B63AFF] mb-3 relative">
-        <span className="inline-block animate-bounce">Auth, Data Structure & Others</span>
-      </h3>
-      {createRow(otherSkills, "left")}
-    </div>
+    {createRow(otherSkills, "left")}
   </div>
 );
 
