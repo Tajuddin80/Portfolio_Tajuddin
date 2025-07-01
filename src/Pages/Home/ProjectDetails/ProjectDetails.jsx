@@ -21,7 +21,6 @@ import { BiTransfer } from "react-icons/bi";
 import { Link, useLoaderData, useNavigate } from "react-router";
 import { useEffect } from "react";
 
-
 const techIcons = {
   HTML: <SiHtml5 className="inline-block text-xl" />,
   React: <SiReact className="inline-block text-xl" />,
@@ -44,26 +43,25 @@ const techIcons = {
 };
 
 const ProjectDetails = () => {
-    useEffect(() => {
-  window.scrollTo({ top: 0, behavior: "instant" }); // Or use "smooth" if you prefer
-}, []);
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "instant" }); // Or use "smooth" if you prefer
+  }, []);
   const data = useLoaderData();
 
-const navigate = useNavigate();
-const handleBack = () => {
-  navigate("/", { state: { scrollToProjects: true } });
-};
+  const navigate = useNavigate();
+  const handleBack = () => {
+    navigate("/", { state: { scrollToProjects: true } });
+  };
 
   return (
     <div className="bg-[#140719] text-white rounded-2xl shadow-xl p-6 space-y-10 w-[80vw] mx-auto px-4 sm:px-6 md:px-12 font-lora">
       {/* Title */}
- <button
-  onClick={handleBack}
-  className="mb-4 inline-block px-4 py-2 bg-[#B63AFF] text-white rounded-md hover:bg-[#a12be0] transition font-semibold cursor-pointer"
->
-  Back
-</button>
-
+      <button
+        onClick={handleBack}
+        className="mb-4 inline-block px-4 py-2 bg-[#B63AFF] text-white rounded-md hover:bg-[#a12be0] transition font-semibold cursor-pointer"
+      >
+        Back
+      </button>
 
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#B63AFF] font-poppins tracking-wide">
         {data.title}

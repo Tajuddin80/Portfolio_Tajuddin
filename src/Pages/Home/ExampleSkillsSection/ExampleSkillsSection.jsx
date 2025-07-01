@@ -14,14 +14,14 @@ import {
   SiPostman,
   SiGit,
   SiPython,
-  SiBootstrap
+  SiBootstrap,
 } from "react-icons/si";
 import {
   FaJava,
   FaCode,
   FaProjectDiagram,
   FaDatabase,
-  FaBrain
+  FaBrain,
 } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
 import { RiReactjsLine } from "react-icons/ri";
@@ -35,7 +35,7 @@ const frontendSkills = [
   { icon: <SiTailwindcss />, label: "Tailwind CSS" },
   { icon: <SiBootstrap />, label: "Bootstrap" },
   { icon: <TbBrandNextjs />, label: "Next.js" },
-  { icon: <RiReactjsLine />, label: "React Router" }
+  { icon: <RiReactjsLine />, label: "React Router" },
 ];
 
 const backendSkills = [
@@ -43,7 +43,7 @@ const backendSkills = [
   { icon: <SiExpress />, label: "Express" },
   { icon: <SiMongodb />, label: "MongoDB" },
   { icon: <SiFirebase />, label: "Firebase" },
-  { icon: <SiPostman />, label: "Postman" }
+  { icon: <SiPostman />, label: "Postman" },
 ];
 
 const otherSkills = [
@@ -54,7 +54,7 @@ const otherSkills = [
   { icon: <FaCode />, label: "C" },
   { icon: <FaBrain />, label: "Algorithm" },
   { icon: <FaProjectDiagram />, label: "OOP" },
-  { icon: <FaDatabase />, label: "Data Structure" }
+  { icon: <FaDatabase />, label: "Data Structure" },
 ];
 
 // --- Reusable marquee row ---
@@ -88,11 +88,11 @@ const createRow = (skillsArray, dir = "left") => (
 // --- Main component ---
 const ExampleSkillsSection = () => (
   <div
-   data-aos="fade-up"
+    data-aos="fade-up"
     className="w-full min-h-screen bg-[#140719] flex flex-col justify-center px-4 sm:px-8 md:px-16 py-10 space-y-1"
   >
     <h2 className="text-4xl md:text-5xl font-bold text-center text-[#B63AFF] poppins relative">
-      <span className="inline-block animate-pulse">My Skills & Technologies</span>
+      <span className="inline-block animate-pulse">Tech Stack</span>
     </h2>
 
     {/* Frontend */}

@@ -149,14 +149,13 @@ const ContactMe = () => {
         <form ref={form} onSubmit={sendEmail} className="space-y-5">
           <div className="flex flex-col">
             <label className="text-white mb-1">Name</label>
-       <input
-  type="text"
-  name="user_name"
-  required
-  className="bg-transparent border border-[#507687] rounded-lg px-4 py-3 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-[#B63AFF]"
-  placeholder="Your name"
-/>
-
+            <input
+              type="text"
+              name="user_name"
+              required
+              className="bg-transparent border border-[#507687] rounded-lg px-4 py-3 text-white placeholder-white focus:outline-none focus:ring-2 focus:ring-[#B63AFF]"
+              placeholder="Your name"
+            />
           </div>
           <div className="flex flex-col">
             <label className="text-white mb-1">Email</label>

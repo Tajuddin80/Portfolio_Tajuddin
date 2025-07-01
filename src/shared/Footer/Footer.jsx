@@ -1,34 +1,61 @@
 import React from "react";
-import { Link } from "react-router";
+import { Link as ScrollLink } from "react-scroll";
 import { Linkedin, Github, Mail, Twitter } from "lucide-react";
+
 const Footer = () => {
   return (
     <footer className="footer footer-horizontal footer-center rounded p-10 border-t border-[#B63AFF]/50">
       <nav className="grid grid-flow-col gap-4">
-        <Link
-          to={"/"}
-          className="link link-hover transition-colors duration-200 hover:text-[#B63AFF]"
+        <ScrollLink
+          to="home"
+          smooth
+          duration={800}
+          offset={-80}
+          activeClass="active-link"
+          className="px-2 rounded-xl cursor-pointer py-1 hover:bg-[#B63AFF]"
         >
           Home
-        </Link>
-        <Link
-          to={"/"}
-          className="link link-hover transition-colors duration-200 hover:text-[#B63AFF]"
+        </ScrollLink>
+        <ScrollLink
+          to="aboutMe"
+          smooth
+          duration={800}
+          offset={-80}
+          activeClass="active-link"
+          className="px-2 rounded-xl cursor-pointer py-1 hover:bg-[#B63AFF]"
         >
           About Me
-        </Link>
-        <Link
-          to={"/"}
-          className="link link-hover transition-colors duration-200 hover:text-[#B63AFF]"
+        </ScrollLink>
+        <ScrollLink
+          to="mySkill"
+          smooth
+          duration={800}
+          offset={-80}
+          activeClass="active-link"
+          className="px-2 rounded-xl cursor-pointer py-1 hover:bg-[#B63AFF]"
+        >
+          Skill
+        </ScrollLink>
+        <ScrollLink
+          to="projects"
+          smooth
+          duration={800}
+          offset={-80}
+          activeClass="active-link"
+          className="px-2 rounded-xl cursor-pointer py-1 hover:bg-[#B63AFF]"
         >
           Projects
-        </Link>
-        <Link
-          to={"/"}
-          className="link link-hover transition-colors duration-200 hover:text-[#B63AFF]"
+        </ScrollLink>
+        <ScrollLink
+          to="contact"
+          smooth
+          duration={800}
+          offset={-80}
+          activeClass="active-link"
+          className="px-2 rounded-xl cursor-pointer py-1 hover:bg-[#B63AFF]"
         >
           Contact Me
-        </Link>
+        </ScrollLink>
       </nav>
 
       <nav>
@@ -54,7 +81,6 @@ const Footer = () => {
           >
             <Mail className="w-10 h-10 text-[#B63AFF] hover:text-white hover:bg-[#B63AFF] rounded p-1 transition" />
           </a>
-
           <a
             href="https://x.com/TajuddinCSE"
             target="_blank"
@@ -67,8 +93,8 @@ const Footer = () => {
 
       <aside>
         <p>
-          Copyright © {new Date().getFullYear()} - All rights reserved by ACME
-          Industries Ltd
+          Copyright © {new Date().getFullYear()} - All rights reserved by The
+          owner
         </p>
       </aside>
     </footer>

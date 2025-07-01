@@ -128,7 +128,7 @@ const Project = ({ data }) => {
             to={`/projectDetails/${id}`}
             className="px-4 py-2 bg-[#B63AFF] text-white font-bold rounded-lg transition transform duration-300 hover:scale-105 hover:bg-[#a12be0] hover:text-[#140719]"
           >
-       More Details
+            More Details
           </Link>
         </div>
       </div>

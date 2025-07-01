@@ -29,9 +29,22 @@
       "Nodemon for hot reload in development"
     ],
     "techList": [
-      "HTML", "React", "React Router", "Vite", "Tailwind CSS", "Firebase", "JWT",
-      "Node.js", "Express.js", "MongoDB", "Axios", "React Query", "Framer Motion",
-      "Swiper", "Dotenv", "CORS"
+      "HTML",
+      "React",
+      "React Router",
+      "Vite",
+      "Tailwind CSS",
+      "Firebase",
+      "JWT",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Axios",
+      "React Query",
+      "Framer Motion",
+      "Swiper",
+      "Dotenv",
+      "CORS"
     ],
     "links": [
       {
@@ -92,8 +105,20 @@
       "Nodemon for hot reload in development"
     ],
     "techList": [
-      "React", "HTML", "React Router", "Vite", "Tailwind CSS", "Firebase",
-      "Node.js", "Express.js", "MongoDB", "Axios", "Framer Motion",  "Swiper", "Dotenv", "CORS"
+      "React",
+      "HTML",
+      "React Router",
+      "Vite",
+      "Tailwind CSS",
+      "Firebase",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Axios",
+      "Framer Motion",
+      "Swiper",
+      "Dotenv",
+      "CORS"
     ],
     "links": [
       {
@@ -147,8 +172,14 @@
       "Scalable structure ready for backend integration"
     ],
     "techList": [
-      "React", "React Router", "HTML", "Vite", "Tailwind CSS", "Firebase",
-     "Swiper",  "Dotenv"
+      "React",
+      "React Router",
+      "HTML",
+      "Vite",
+      "Tailwind CSS",
+      "Firebase",
+      "Swiper",
+      "Dotenv"
     ],
     "links": [
       {

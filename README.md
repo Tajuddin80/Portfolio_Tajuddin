@@ -1,12 +1,37 @@
-# React + Vite
+# 🚀 Taj Uddin — Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my **developer portfolio** repository! This site showcases my skills, projects, education, and contact information.
 
-Currently, two official plugins are available:
+### 🌐 Live Site
+👉 [View Portfolio](https://portfolio-tajuddin.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📌 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ✅ Responsive design (mobile-first)
+- ✅ Animated hero section with typewriter effect
+- ✅ Smooth scroll navigation
+- ✅ Project showcase with details
+- ✅ Social links (LinkedIn, GitHub, Twitter, Email)
+- ✅ Built with modern web technologies
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** React.js, Tailwind CSS, DaisyUI
+- **Animations:** AOS, react-simple-typewriter, react-scroll
+- **Icons:** react-icons, lucide-react
+- **Version Control:** Git + GitHub
+
+---
+
+## 💬 Contact
+
+Feel free to connect with me:
+
+- **LinkedIn:** [www.linkedin.com/in/tajuddin80](https://www.linkedin.com/in/tajuddin80)
+- **GitHub:** [https://github.com/Tajuddin80](https://github.com/Tajuddin80)
+- **Twitter / X:** [https://x.com/TajuddinCSE](https://x.com/TajuddinCSE)
+- **Email:** [tajuddin.cse.dev@gmail.com](mailto:tajuddin.cse.dev@gmail.com)

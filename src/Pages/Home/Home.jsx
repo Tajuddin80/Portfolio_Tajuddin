@@ -16,19 +16,18 @@ import { useLocation, useNavigate } from "react-router";
 const Home = () => {
   const location = useLocation();
 
-const navigate = useNavigate();
-useEffect(() => {
-  if (location.state?.scrollToProjects) {
-    const el = document.getElementById("projects");
-    if (el) {
-      setTimeout(() => {
-        el.scrollIntoView({ behavior: "smooth" });
-        // 🔑 Clear scroll state so it won't persist on reload
-        navigate("/", { replace: true });
-      }, 100);
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (location.state?.scrollToProjects) {
+      const el = document.getElementById("projects");
+      if (el) {
+        setTimeout(() => {
+          el.scrollIntoView({ behavior: "smooth" });
+          navigate("/", { replace: true });
+        }, 100);
+      }
     }
-  }
-}, [location, navigate]);
+  }, [location, navigate]);
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
