@@ -11,7 +11,7 @@ const Navbar = () => {
     navigate("/", { state: { scrollToProjects: true } });
   };
   const linkClass =
-    "px-3 py-2 transition-colors duration-200 rounded text-white mr-5 hover:bg-[#B63AFF]";
+    "px-3 py-2 transition-colors duration-200 rounded text-white mr-5 hover:bg-[#B63AFF] cursor-pointer";
 
   const location = useLocation();
   const isProjectDetails = location.pathname.startsWith("/projectDetails");
@@ -114,7 +114,7 @@ const navLinks = (linkClass) => (
         activeClass="active-link"
         className={linkClass}
       >
-        Skill
+      Stack
       </ScrollLink>
     </li>
     <li>

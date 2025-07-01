@@ -4,7 +4,7 @@ const BootCamps = () => {
   return (
     <section
       data-aos="fade-up"
-      className="w-full bg-[#140719] text-white px-4 md:px-8 lg:px-16 py-10"
+      className="w-full bg-[#140719] text-white px-4 md:px-8 lg:px-16 md:py-10 py-5"
     >
       <h2 className="text-4xl md:text-5xl font-bold text-center mb-8 text-[#B63AFF] poppins relative">
         <span className="inline-block animate-pulse">Bootcamp</span>

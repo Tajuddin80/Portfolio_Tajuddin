@@ -180,7 +180,7 @@ const ContactMe = () => {
           <div className="flex justify-center md:justify-start">
             <button
               type="submit"
-              className="bg-[#B63AFF] hover:bg-[#a228e0] transition px-8 py-3 rounded-lg font-bold text-white shadow-lg"
+              className="bg-[#B63AFF] cursor-pointer hover:bg-[#a228e0] transition px-8 py-3 rounded-lg font-bold text-white shadow-lg"
             >
               Send Message
             </button>

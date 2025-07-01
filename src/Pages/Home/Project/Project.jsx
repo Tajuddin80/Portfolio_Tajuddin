@@ -30,7 +30,7 @@ const Project = ({ data }) => {
   } = data;
 
   return (
-    <div className="flex flex-col xl1360:flex-col xl:flex-row gap-8 py-3 md:p-6 bg-[#140719] rounded-2xl shadow-xl mb-10">
+    <div className="flex flex-col xl1360:flex-col xl:flex-row gap-8 py-3 md:p-6 bg-[#140719] rounded-2xl shadow-xl mb-10 md:mb-20">
       <div className="flex-1 xl1360:w-[95vw] xl1360:mx-auto">
         <ImageScrollBox images={images} />
       </div>

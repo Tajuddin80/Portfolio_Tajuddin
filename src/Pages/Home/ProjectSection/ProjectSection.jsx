@@ -7,9 +7,9 @@ const ProjectSection = () => {
     <section
       id="projects"
       data-aos="fade-up"
-      className="flex flex-col items-center justify-center px-4 md:px-12 py-12 gap-10 text-white"
+      className="flex flex-col items-center justify-center px-3 md:px-8 py-3 md:py-8 text-white"
     >
-      <h2 className="text-4xl md:text-5xl font-bold text-center mb-8 text-[#B63AFF] poppins relative">
+      <h2 className="text-4xl md:text-5xl font-bold text-center md:mb-7 mb-3 text-[#B63AFF] poppins relative">
         <span className="inline-block animate-pulse">My Projects</span>
       </h2>
 

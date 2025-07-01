@@ -72,9 +72,9 @@ const createRow = (skillsArray, dir = "left") => (
       .map((skill, idx) => (
         <div
           key={`${dir}-${idx}-${skill.label}`}
-          className="flex flex-col items-center justify-center w-25 h-25 sm:w-30 sm:h-30 md:w-40 md:h-40 
+          className="flex flex-col items-center justify-center w-20 h-20 sm:w-25 sm:h-25 md:w-38 md:h-38 
                      bg-transparent border border-[#B63AFF] rounded-xl text-white mx-4 shadow-lg 
-                     transition hover:bg-[#B63AFF] hover:text-[#140719] animate-pulse"
+                     transition hover:bg-[#B63AFF] hover:text-[#140719] animate-pulse cursor-pointer"
         >
           <div className="text-4xl sm:text-5xl md:text-6xl">{skill.icon}</div>
           <div className="mt-2 text-xs sm:text-sm md:text-base font-semibold">
@@ -89,7 +89,7 @@ const createRow = (skillsArray, dir = "left") => (
 const ExampleSkillsSection = () => (
   <div
     data-aos="fade-up"
-    className="w-full min-h-screen bg-[#140719] flex flex-col justify-center px-4 sm:px-8 md:px-16 py-10 space-y-1"
+    className="w-full  bg-[#140719] flex flex-col justify-center px-4 sm:px-6 md:px-10 py-5 md:py-10 space-y-1"
   >
     <h2 className="text-4xl md:text-5xl font-bold text-center text-[#B63AFF] poppins relative">
       <span className="inline-block animate-pulse">Tech Stack</span>
