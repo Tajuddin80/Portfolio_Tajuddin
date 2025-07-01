@@ -3,9 +3,13 @@ import { IoCloudDownloadOutline } from "react-icons/io5";
 import logo from "../../assets/logo.png";
 import Magnet from "../../components/Magnet/Magnet";
 import { Link as ScrollLink } from "react-scroll";
-import { useLocation } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 
 const Navbar = () => {
+  const navigate = useNavigate();
+  const handleBack = () => {
+    navigate("/", { state: { scrollToProjects: true } });
+  };
   const linkClass =
     "px-3 py-2 transition-colors duration-200 rounded text-white mr-5 hover:bg-[#B63AFF]";
 
@@ -36,7 +40,16 @@ const Navbar = () => {
             tabIndex={0}
             className="menu menu-sm dropdown-content mt-3 w-52 rounded-box bg-[#384B70] p-2 shadow text-lg md:text-xl "
           >
-            {!isProjectDetails && navLinks(linkClass)}
+            {isProjectDetails ? (
+              <button
+                onClick={handleBack}
+                className=" inline-flex items-center   text-white rounded-lg text-base md:text-lg font-bold poppins hover:bg-[#a12be0] cursor-pointer"
+              >
+                Back
+              </button>
+            ) : (
+              navLinks(linkClass)
+            )}
           </ul>
         </div>
         <img

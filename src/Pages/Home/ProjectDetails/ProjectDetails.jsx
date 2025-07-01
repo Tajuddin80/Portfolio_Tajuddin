@@ -54,16 +54,21 @@ const ProjectDetails = () => {
   };
 
   return (
-    <div className="bg-[#140719] text-white rounded-2xl shadow-xl p-6 space-y-10 w-[80vw] mx-auto px-4 sm:px-6 md:px-12 font-lora">
+    <div className="bg-[#140719] text-white rounded-2xl shadow-xl p-6 space-y-10 w-[80vw] mx-auto px-4 sm:px-6 md:px-12 lora">
       {/* Title */}
-      <button
-        onClick={handleBack}
-        className="mb-4 inline-block px-4 py-2 bg-[#B63AFF] text-white rounded-md hover:bg-[#a12be0] transition font-semibold cursor-pointer"
-      >
-        Back
-      </button>
+   <div className="flex flex-col items-center">
+  <button
+    onClick={handleBack}
+    className="mt-6 inline-flex items-center gap-2 px-6 py-3 bg-[#B63AFF] text-white rounded-lg text-base md:text-lg font-bold poppins hover:bg-[#a12be0] hover:scale-105 transition-transform duration-300 cursor-pointer shadow-md animate-pulse"
+  >
+    ← Back
+  </button>
 
-      <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#B63AFF] font-poppins tracking-wide">
+  <div className="mt-4 border-b-4 border-[#B63AFF] w-[90vw]"></div>
+</div>
+
+
+      <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#B63AFF] poppins tracking-wide">
         {data.title}
       </h2>
 
@@ -76,7 +81,7 @@ const ProjectDetails = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Frontend Features */}
         <section className="bg-[#1e0f2b] p-6 rounded-lg shadow-md border border-[#3b1a5a]">
-          <h4 className="text-xl sm:text-2xl font-semibold text-[#B63AFF] mb-4 font-poppins">
+          <h4 className="text-xl sm:text-2xl font-semibold text-[#B63AFF] mb-4 poppins">
             {data.frontendFeaturesTitle}
           </h4>
           <ul className="space-y-2 text-sm sm:text-base leading-relaxed">
@@ -91,7 +96,7 @@ const ProjectDetails = () => {
 
         {/* Backend Features */}
         <section className="bg-[#1e0f2b] p-6 rounded-lg shadow-md border border-[#3b1a5a]">
-          <h4 className="text-xl sm:text-2xl font-semibold text-[#B63AFF] mb-4 font-poppins">
+          <h4 className="text-xl sm:text-2xl font-semibold text-[#B63AFF] mb-4 poppins">
             {data.backendFeaturesTitle}
           </h4>
           <ul className="space-y-2 text-sm sm:text-base leading-relaxed">
@@ -107,7 +112,7 @@ const ProjectDetails = () => {
 
       {/* Technologies */}
       <section>
-        <h4 className="text-xl sm:text-2xl font-semibold text-[#B63AFF] mb-6 font-poppins">
+        <h4 className="text-xl sm:text-2xl font-semibold text-[#B63AFF] mb-6 poppins">
           Technologies
         </h4>
         <div className="flex flex-wrap gap-4">
@@ -118,7 +123,7 @@ const ProjectDetails = () => {
               title={tech}
             >
               {techIcons[tech] || null}
-              <span className="font-lora">{tech}</span>
+              <span className="lora">{tech}</span>
             </span>
           ))}
         </div>
@@ -126,7 +131,7 @@ const ProjectDetails = () => {
 
       {/* Challenges Faced */}
       <section className="space-y-4">
-        <h4 className="text-xl sm:text-2xl font-semibold text-[#B63AFF] font-poppins">
+        <h4 className="text-xl sm:text-2xl font-semibold text-[#B63AFF] poppins">
           Challenges Faced
         </h4>
         <ul className="space-y-2 text-sm sm:text-base leading-relaxed">
@@ -141,7 +146,7 @@ const ProjectDetails = () => {
 
       {/* Solutions */}
       <section className="space-y-4">
-        <h4 className="text-xl sm:text-2xl font-semibold text-[#B63AFF] font-poppins">
+        <h4 className="text-xl sm:text-2xl font-semibold text-[#B63AFF] poppins">
           Solutions
         </h4>
         <ul className="space-y-2 text-sm sm:text-base leading-relaxed">
@@ -156,7 +161,7 @@ const ProjectDetails = () => {
 
       {/* Future Improvements */}
       <section className="space-y-4">
-        <h4 className="text-xl sm:text-2xl font-semibold text-[#B63AFF] font-poppins">
+        <h4 className="text-xl sm:text-2xl font-semibold text-[#B63AFF] poppins">
           Future Improvements
         </h4>
         <ul className="space-y-2 text-sm sm:text-base leading-relaxed">

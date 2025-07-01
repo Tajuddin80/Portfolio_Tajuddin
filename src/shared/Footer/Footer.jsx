@@ -24,7 +24,7 @@ const Footer = () => {
           activeClass="active-link"
           className="px-2 rounded-xl cursor-pointer py-1 hover:bg-[#B63AFF]"
         >
-          About Me
+          About
         </ScrollLink>
         <ScrollLink
           to="mySkill"
@@ -54,7 +54,7 @@ const Footer = () => {
           activeClass="active-link"
           className="px-2 rounded-xl cursor-pointer py-1 hover:bg-[#B63AFF]"
         >
-          Contact Me
+          Contact
         </ScrollLink>
       </nav>
 
