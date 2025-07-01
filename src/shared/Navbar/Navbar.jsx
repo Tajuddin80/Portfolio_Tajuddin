@@ -12,7 +12,7 @@ const Navbar = () => {
    const isProjectDetails = location.pathname.startsWith("/projectDetails");
 
   return (
-    <nav className="navbar border-b md:px-10 border-[#507687] sticky top-0 z-50 bg-[#140719] ">
+    <nav className="navbar border-b md:px-10 border-[#B63AFF]/50 sticky top-0 z-50 bg-[#140719] ">
       <div className="navbar-start">
         <div className="dropdown">
           <button tabIndex={0} className="btn btn-ghost lg:hidden text-white">
