@@ -126,8 +126,12 @@
         "url": "https://plant-book-f2ba2.web.app/"
       },
       {
-        "label": "GitHub Repo",
-        "url": "https://github.com/Tajuddin80/Plant-Book"
+        "label": "GitHub Client Repo",
+        "url": "https://github.com/Tajuddin80/Plant-Book-client"
+      },
+         {
+        "label": "GitHub Server Repo",
+        "url": "https://github.com/Tajuddin80/Plant-Book-server"
       }
     ],
     "moreDetails": {

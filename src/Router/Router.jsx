@@ -13,7 +13,7 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "projectDetails/:id",
+        path: "/projectDetails/:id",
         loader: ({ params }) =>
           fetch("/projectDataArray.json")
             .then((res) => res.json())
