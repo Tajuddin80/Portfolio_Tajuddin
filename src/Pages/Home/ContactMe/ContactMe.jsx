@@ -53,7 +53,7 @@ const ContactMe = () => {
       data-aos="fade-up"
       className="w-full min-h-screen flex items-center justify-center bg-transparent px-4 py-16"
     >
-      <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8 backdrop-blur-md bg-[#140719]/50 rounded-2xl shadow-2xl p-8 border-2 transition-transform duration-500 hover:scale-105 border-[#B63AFF]/50">
+      <div className="w-full max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-8 backdrop-blur-md bg-[#140719]/50 rounded-2xl shadow-2xl p-8 border-2 transition-transform duration-500 hover:scale-102 border-[#B63AFF]/50">
         {/* Left Side */}
         <div className="flex flex-col justify-between text-center md:text-left">
           <div>
@@ -77,7 +77,7 @@ const ContactMe = () => {
                 </a>
               </div>
 
-              <div className="flex items-center gap-2">
+              {/* <div className="flex items-center gap-2">
                 <Phone className="text-[#B63AFF]" />
                 <a
                   href="tel:+8801303187780"
@@ -85,7 +85,7 @@ const ContactMe = () => {
                 >
                   +8801303187780
                 </a>
-              </div>
+              </div> */}
 
               <div className="flex items-center gap-2">
                 <MessageSquare className="text-[#B63AFF]" />
@@ -98,7 +98,7 @@ const ContactMe = () => {
                   WhatsApp: +8801845072525
                 </a>
               </div>
-              <div className="flex items-center gap-2">
+              {/* <div className="flex items-center gap-2">
                 <MessageSquare className="text-[#B63AFF]" />
                 <a
                   href="https://wa.me/8801303187780"
@@ -108,7 +108,7 @@ const ContactMe = () => {
                 >
                   WhatsApp: +8801303187780
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
 
