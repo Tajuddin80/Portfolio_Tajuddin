@@ -56,17 +56,16 @@ const ProjectDetails = () => {
   return (
     <div className="bg-[#140719] text-white rounded-2xl shadow-xl p-6 space-y-10 w-[80vw] mx-auto px-4 sm:px-6 md:px-12 lora">
       {/* Title */}
-   <div className="flex flex-col items-center">
-  <button
-    onClick={handleBack}
-    className="mt-6 inline-flex items-center gap-2 px-6 py-3 bg-[#B63AFF] text-white rounded-lg text-base md:text-lg font-bold poppins hover:bg-[#a12be0] hover:scale-105 transition-transform duration-300 cursor-pointer shadow-md animate-pulse"
-  >
-    ← Back
-  </button>
+      <div className="flex flex-col items-center">
+        <button
+          onClick={handleBack}
+          className="mt-6 inline-flex items-center gap-2 px-6 py-3 bg-[#B63AFF] text-white rounded-lg text-base md:text-lg font-bold poppins hover:bg-[#a12be0] hover:scale-105 transition-transform duration-300 cursor-pointer shadow-md animate-pulse"
+        >
+          ← Back
+        </button>
 
-  <div className="mt-4 border-b-4 border-[#B63AFF] w-[90vw]"></div>
-</div>
-
+        <div className="mt-4 border-b-4 border-[#B63AFF] w-[90vw]"></div>
+      </div>
 
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#B63AFF] poppins tracking-wide">
         {data.title}

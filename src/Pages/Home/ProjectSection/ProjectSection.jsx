@@ -1,8 +1,16 @@
-import React from "react";
-import projectDataArray from "../../../../public/projectDataArray.json";
+import React, { useEffect, useState } from "react";
 import Project from "../Project/Project";
 
 const ProjectSection = () => {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    fetch("/projectDataArray.json")
+      .then((res) => res.json())
+      .then((data) => setProjects(data))
+      .catch((err) => console.error("Failed to load project data", err));
+  }, []);
+
   return (
     <section
       id="projects"
@@ -14,7 +22,7 @@ const ProjectSection = () => {
       </h2>
 
       <div className="w-full mx-auto">
-        {projectDataArray.map((project) => (
+        {projects.map((project) => (
           <Project key={project.id} data={project} />
         ))}
       </div>

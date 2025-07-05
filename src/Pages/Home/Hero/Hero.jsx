@@ -93,9 +93,13 @@ const Hero = () => {
         </div>
 
         <Magnet padding={200} disabled={false} magnetStrength={20}>
-          <button className="btn text-white bg-[#B63AFF] hover:bg-transparent border border-[#B63AFF] transition">
+          <a
+            href="/Taj-Uddin's-Resume.pdf"
+            download="Taj-Uddin's-Resume.pdf"
+            className="btn border bg-[#B63AFF] border-[#507687] text-white hover:text-[#B63AFF] hover:border-white hover:bg-transparent transition-colors duration-200 inline-flex items-center gap-2"
+          >
             Resume <IoCloudDownloadOutline />
-          </button>
+          </a>
         </Magnet>
       </div>
 

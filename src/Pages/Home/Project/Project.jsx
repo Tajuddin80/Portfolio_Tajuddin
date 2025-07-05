@@ -1,9 +1,21 @@
 import React from "react";
 import ImageScrollBox from "../../../components/ImageScrollBox/ImageScrollBox";
 import {
-  SiCss3, SiDaisyui, SiExpress, SiFirebase, SiHtml5,
-  SiJavascript, SiJsonwebtokens, SiMongodb, SiNodedotjs,
-  SiReact, SiReactrouter, SiTailwindcss, SiVite, SiAxios, SiFramer
+  SiCss3,
+  SiDaisyui,
+  SiExpress,
+  SiFirebase,
+  SiHtml5,
+  SiJavascript,
+  SiJsonwebtokens,
+  SiMongodb,
+  SiNodedotjs,
+  SiReact,
+  SiReactrouter,
+  SiTailwindcss,
+  SiVite,
+  SiAxios,
+  SiFramer,
 } from "react-icons/si";
 import { RiAlertLine } from "react-icons/ri";
 import { BiTransfer } from "react-icons/bi";
@@ -11,22 +23,39 @@ import { FaCode } from "react-icons/fa";
 import { Link } from "react-router";
 
 const techListNameAndIcon = [
-  { name: "React", icon: <SiReact /> }, { name: "HTML", icon: <SiHtml5 /> },
-  { name: "React Router", icon: <SiReactrouter /> }, { name: "Vite", icon: <SiVite /> },
-  { name: "Tailwind CSS", icon: <SiTailwindcss /> }, { name: "DaisyUI", icon: <SiDaisyui /> },
-  { name: "Firebase", icon: <SiFirebase /> }, { name: "Node.js", icon: <SiNodedotjs /> },
-  { name: "Express.js", icon: <SiExpress /> }, { name: "MongoDB", icon: <SiMongodb /> },
-  { name: "Axios", icon: <SiAxios /> }, { name: "Framer Motion", icon: <SiFramer /> },
-  { name: "Lottie", icon: <FaCode /> }, { name: "Swiper", icon: <FaCode /> },
-  { name: "SweetAlert2", icon: <RiAlertLine /> }, { name: "Dotenv", icon: <FaCode /> },
-  { name: "CORS", icon: <BiTransfer /> }
+  { name: "React", icon: <SiReact /> },
+  { name: "HTML", icon: <SiHtml5 /> },
+  { name: "React Router", icon: <SiReactrouter /> },
+  { name: "Vite", icon: <SiVite /> },
+  { name: "Tailwind CSS", icon: <SiTailwindcss /> },
+  { name: "DaisyUI", icon: <SiDaisyui /> },
+  { name: "Firebase", icon: <SiFirebase /> },
+  { name: "Node.js", icon: <SiNodedotjs /> },
+  { name: "JavaScript", icon: <SiJavascript /> },
+  { name: "JWT", icon: <SiJsonwebtokens /> },
+  { name: "Express.js", icon: <SiExpress /> },
+  { name: "MongoDB", icon: <SiMongodb /> },
+  { name: "Axios", icon: <SiAxios /> },
+  { name: "Framer Motion", icon: <SiFramer /> },
+  { name: "Lottie", icon: <FaCode /> },
+  { name: "Swiper", icon: <FaCode /> },
+  { name: "SweetAlert2", icon: <RiAlertLine /> },
+  { name: "Dotenv", icon: <FaCode /> },
+  { name: "CORS", icon: <BiTransfer /> },
 ];
 
 const Project = ({ data }) => {
   const {
-    id, title, images, description,
-    frontendFeatures, backendFeatures, links,
-    frontendFeaturesTitle, backendFeaturesTitle, techList
+    id,
+    title,
+    images,
+    description,
+    frontendFeatures,
+    backendFeatures,
+    links,
+    frontendFeaturesTitle,
+    backendFeaturesTitle,
+    techList,
   } = data;
 
   return (
@@ -68,7 +97,9 @@ const Project = ({ data }) => {
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 pt-2">
           {techList.map((tech) => {
-            const match = techListNameAndIcon.find((item) => item.name === tech);
+            const match = techListNameAndIcon.find(
+              (item) => item.name === tech
+            );
             return match ? (
               <div
                 key={match.name}
@@ -79,7 +110,6 @@ const Project = ({ data }) => {
               </div>
             ) : null;
           })}
-          
         </div>
 
         <div className="flex flex-wrap gap-4 pt-4">
@@ -97,7 +127,7 @@ const Project = ({ data }) => {
           <Link
             to={`/projectDetails/${id}`}
             className="px-4 py-2 bg-[#B63AFF] text-white font-bold rounded-lg poppins transition transform duration-300 hover:scale-105 hover:bg-[#a12be0] hover:text-[#140719]"
-            >
+          >
             More Details
           </Link>
         </div>

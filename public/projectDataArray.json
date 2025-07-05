@@ -35,6 +35,7 @@
       "Vite",
       "Tailwind CSS",
       "Firebase",
+      "JavaScript",
       "JWT",
       "Node.js",
       "Express.js",
@@ -112,6 +113,7 @@
       "Tailwind CSS",
       "Firebase",
       "Node.js",
+      "JavaScript",
       "Express.js",
       "MongoDB",
       "Axios",
@@ -129,7 +131,7 @@
         "label": "GitHub Client Repo",
         "url": "https://github.com/Tajuddin80/Plant-Book-client"
       },
-         {
+      {
         "label": "GitHub Server Repo",
         "url": "https://github.com/Tajuddin80/Plant-Book-server"
       }
@@ -181,6 +183,7 @@
       "HTML",
       "Vite",
       "Tailwind CSS",
+      "JavaScript",
       "Firebase",
       "Swiper",
       "Dotenv"

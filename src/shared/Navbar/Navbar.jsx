@@ -67,9 +67,13 @@ const Navbar = () => {
 
       <div className="navbar-end">
         <Magnet padding={100} disabled={false} magnetStrength={20}>
-          <button className="btn border bg-[#B63AFF] border-[#507687] text-white hover:text-[#B63AFF] hover:border-white hover:bg-transparent transition-colors duration-200">
+          <a
+            href="/Taj-Uddin's-Resume.pdf"
+            download="Taj-Uddin's-Resume.pdf"
+            className="btn border bg-[#B63AFF] border-[#507687] text-white hover:text-[#B63AFF] hover:border-white hover:bg-transparent transition-colors duration-200 inline-flex items-center gap-2"
+          >
             Resume <IoCloudDownloadOutline />
-          </button>
+          </a>
         </Magnet>
       </div>
     </nav>
@@ -114,7 +118,7 @@ const navLinks = (linkClass) => (
         activeClass="active-link"
         className={linkClass}
       >
-      Stack
+        Stack
       </ScrollLink>
     </li>
     <li>
